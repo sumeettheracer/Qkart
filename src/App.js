@@ -17,7 +17,7 @@ import React from "react";
 import theme from "./theme";
 
 export const config = {
-  endpoint: `http://${ipConfig.workspaceIp}:8082/api/v1`,
+  endpoint: `https://qkart-sumeet.herokuapp.com/api/v1`,
 };
 
 function App() {
