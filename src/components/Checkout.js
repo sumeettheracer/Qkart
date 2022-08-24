@@ -525,9 +525,11 @@ const Checkout = () => {
             ) : (
               addresses.all.map((data) => (
                 <Box
-                  className={`address-item ${
-                    addresses.selected ? "selected" : "not-selected"
-                  }`}
+                className={
+                  addresses.selected === data._id
+                    ? "address-item selected"
+                    : "address-item not-selected"
+                }
                   key={data._id}
                   onClick={(e) => {
                     setAddresses((currAddress) => ({
